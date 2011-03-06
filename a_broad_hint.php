@@ -2,12 +2,12 @@
 /*
 Plugin Name: A Broad Hint
 Plugin URI: http://www.annu.biz/wordpress-plugin-a-broad-hint/
-Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten.
-Author: Eric-Oliver M&auml;chler v/o Annubis [Annubis](http://www.annu.biz "Annubis Blog") 
-Version: 1.0
+Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten. Die Administration finden sie unter <a href="options-general.php?page=a-broad-hint/a_broad_hint.php">A Broad Hint</a>
+Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.annu.biz) 
+Version: 1.1
 License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (plugins@annu.biz) and inform me.
-Author URI: http://www.annu.biz
-Update Server: http://www.annu.biz
+Author URI: http://www.maechler.me
+Update Server: http://www.annu.biz/wordpress-plugin-a-broad-hint/
 Min WP Version: 2.7 
 */
 
@@ -92,7 +92,7 @@ function abh_option_page() {
 <h3>Über dieses Plugin</h3>
 <div class="inside">
 <p>Dieses Plugin wurde von <a href="http://www.annu.biz/wordpress-plugin-a-broad-hint/" target="_blank">Eric-Oliver Mächler v/o Annubis</a> entwickelt</p>
-<p>&copy; 2011, Eric-Oliver Mächler | Dies ist Version: 1.0</div>
+<p>&copy; 2011, Eric-Oliver Mächler | Dies ist Version: 1.1</div>
 </div>
 
 <?php 

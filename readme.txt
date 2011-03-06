@@ -1,8 +1,8 @@
 === A Broad Hint ===
-  Contributors: Eric-Oliver M&auml;chler v/o Annubis [Annubis](http://www.annu.biz "Annubis Blog") 
-  Donate link: http://www.annu.biz
+  Contributors: Eric-Oliver M&auml;chler v/o Annubis 
+  Donate link: http://www.annu.biz/wordpress-plugin-a-broad-hint/
   Tags: editor, posting, info, system, message
-  Version: 1.0
+  Version: 1.1
   Requires at least: 2.7+
   Tested up to: 3.1
   Stable tag: 1.0
