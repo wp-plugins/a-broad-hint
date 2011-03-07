@@ -1,8 +1,8 @@
 === A Broad Hint ===
-  Contributors: Eric-Oliver Mächler v/o Annubis 
+  Contributors: Eric-Oliver M&auml;chler v/o Annubis 
   Donate link: http://www.annu.biz/wordpress-plugin-a-broad-hint/
   Tags: editor, posting
-  Version: 1.1.2
+  Version: 1.1.3
   Requires at least: 2.7+
   Tested up to: 3.1
   Stable tag: 1.0
@@ -10,7 +10,7 @@
 == Description ==
   Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen.
   
-  [Created by Eric-Oliver Maechler](http://www.annu.biz "Annubis Blog")
+  [Created by Eric-Oliver M&auml;chler](http://www.annu.biz "Annubis Blog")
   
 == Installation ==
   1. Upload des Plugins in den Plugin-Ordner /wp-content/plugins/
