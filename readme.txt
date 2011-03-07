@@ -10,6 +10,8 @@
 == Description ==
   Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen.
   
+  [Created by Eric-Oliver Maechler](http://www.annu.biz "Annubis Blog")
+  
 == Installation ==
   1. Upload des Plugins in den Plugin-Ordner /wp-content/plugins/
   2. In der Plugin-Administration ihres Blogs kann nun A Broad Hint aktiviert werden.
