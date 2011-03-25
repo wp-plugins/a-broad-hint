@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: A Broad Hint
-Plugin URI: http://www.annu.biz/wordpress-plugin-a-broad-hint/
+Plugin URI: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
 Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten. Die Administration finden sie unter <a href="options-general.php?page=a-broad-hint/a_broad_hint.php">A Broad Hint</a>
-Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.annu.biz) 
+Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.maechler.me) 
 Version: 1.1.4
-License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (plugins@annu.biz) and inform me.
+License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (eric@maechler.me) and inform me.
 Author URI: http://www.maechler.me
-Update Server: http://www.annu.biz/wordpress-plugin-a-broad-hint/
+Update Server: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
 Min WP Version: 2.7 
 */
 
@@ -116,9 +116,9 @@ function abh_option_page() {
 <div class="wrap">
 <h3>Über dieses Plugin</h3>
 <div class="inside">
-<p>Dieses Plugin wurde von <a href="http://www.annu.biz/wordpress-plugin-a-broad-hint/" target="_blank">Eric-Oliver Mächler v/o Annubis</a> entwickelt.</p>
+<p>Dieses Plugin wurde von <a href="http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/" target="_blank">Eric-Oliver Mächler v/o Annubis</a> entwickelt.</p>
 <p>Ich bin auch via Twitter erreichbar, dort könnt ihr mir natürlich auch Fragen stellen oder Probleme schildern. Mich findet man unter <a href="http://twitter.com/eric_maechler" target="_blank">@eric_maechler</a></p>
-<p>&copy; 2011, Eric-Oliver Mächler | Dies ist Version: 1.1.2</div>
+<p>&copy; 2011, Eric-Oliver Mächler | Dies ist Version: 1.1.4</div>
 </div>
 
 <?php 
