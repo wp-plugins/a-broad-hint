@@ -4,7 +4,7 @@ Plugin Name: A Broad Hint
 Plugin URI: http://www.annu.biz/wordpress-plugin-a-broad-hint/
 Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten. Die Administration finden sie unter <a href="options-general.php?page=a-broad-hint/a_broad_hint.php">A Broad Hint</a>
 Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.annu.biz) 
-Version: 1.1.3
+Version: 1.1.4
 License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (plugins@annu.biz) and inform me.
 Author URI: http://www.maechler.me
 Update Server: http://www.annu.biz/wordpress-plugin-a-broad-hint/
@@ -88,6 +88,31 @@ function abh_option_page() {
       </form>
     </div>
 <br /><br /><br />  
+<!--- Social Media Absatz --->
+<br /><br />  
+<div class="wrap">
+<h3>Unterstütze mich und Klicke auf den <b>Gefällt mir</b>-Button:</h3>
+<div class="inside">
+<p>Hier findest du immer die neuesten Informationen über meine Plugins und aus der Welt von Social Media, Programmierung und Webdesign</p>
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FMaechlerme%2F197548726945568&amp;width=600&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=true&amp;height=400" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:450px;" allowTransparency="true"></iframe>
+</div>
+
+<div class="wrap">
+<h3>Unterstütze mich via Paypal</h3>
+<div class="inside">
+<p>Meine Plugins sind alle 100% Gratis, trotzdem würde ich mich über eine kleine Spende freuen damit ich mir hin und wieder ein Starbucks Kafi leisten kann - <b>Danke</b></p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="K4QVERDHQH97Q">
+<input type="image" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/de_DE/CH/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+<img alt="" border="0" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/de_DE/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</div>
+
+</div>
+<!--- Ende --->
+
 <div class="wrap">
 <h3>Über dieses Plugin</h3>
 <div class="inside">
