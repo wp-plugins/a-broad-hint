@@ -4,7 +4,7 @@ Plugin Name: A Broad Hint
 Plugin URI: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
 Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten. Die Administration finden sie unter <a href="options-general.php?page=a-broad-hint/a_broad_hint.php">A Broad Hint</a>
 Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.maechler.me) 
-Version: 1.1.4
+Version: 1.1.5
 License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (eric@maechler.me) and inform me.
 Author URI: http://www.maechler.me
 Update Server: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
@@ -33,7 +33,11 @@ if ('insert2' == $HTTP_POST_VARS['action']) {
     update_option("abh_opti",$HTTP_POST_VARS['abh_opti']);
 }
 
+if ('insert3' == $HTTP_POST_VARS['action']) {
+    update_option("abh_status",$HTTP_POST_VARS['abh_status']);
+}
 
+//Nachricht/Banner Anzeigen
 function abh_link( $content ) {
     global $post, $abh_field, $abh_opti, $abh_sys;
     
@@ -41,10 +45,32 @@ function abh_link( $content ) {
  	
 	if ($abh_opti == 'up')
 			{
-				return $abh_field . $content;
+				//Anzeige Aktiv
+				if (get_option("abh_status") == 'On')
+						{
+							return $abh_field . $content;
+						}
+				else
+						{
+							return $content;
+						}
+						
+				
+				
 			}
 	else	{
-				return $content . $abh_field;
+		
+				//Anzeige Aktiv
+				if (get_option("abh_status") == 'On')
+						{
+							return $content . $abh_field;
+						}
+				else
+						{
+							return $content;
+						}
+				
+				
 			}
 
 
@@ -56,6 +82,8 @@ add_filter( "the_content", "abh_link" );
 $abh_field = get_option('abh_field');
 
 $abh_opti = get_option('abh_opti');
+
+$abh_status = get_option('abh_status');
 
 
 
@@ -75,14 +103,22 @@ function abh_option_page() {
       	<input name="action" value="insert" type="hidden" />
       </form>
       <br /><br /><br />
+      <!--- Anzeige On oder OFF --->
+      <h3>Einblendung On (Aktiv) oder Off (Inaktiv)</h3>
+      Anzeige-Status: <?php echo get_option("abh_status"); ?><br /><br />
+      <form name="form1" method="post" action="<?=$location ?>">
+      <select name="abh_status"><option value="Bitte Auswählen">+++Bitte Auswählen +++</option><option value="Off">Off - Anzeige deaktiviert</option><option value="On">On - Anzeige aktiviert</option>
+		</select><br  />
+        <input type="submit" value="Speichern" />
+      	<input name="action" value="insert3" type="hidden" />
+      </form>
+      <br /><br /><br />
       <h3>Wo soll der Code angezeigt werden, Vor dem Text oder Nach dem Text?</h3>
-      <br />Aktiv ist: <?php echo get_option("abh_opti"); ?><br /><br />
+      Anzeige-Ort: <?php echo get_option("abh_opti"); ?><br /><br />
       <form name="form1" method="post" action="<?=$location ?>">
       	<!--- <input name="abh_opti" value="<?php echo get_option("abh_opti"); ?>" type="text"  size="10" /> Auswahlmöglichkeiten: <strong>up</strong>/<strong>down</strong> (alles andere wird ignoriert)<br/>--->
-        
-        <select name="abh_opti"><option value="Bitte Auswählen">+++Bitte Auswählen +++</option><option value="up">Davor / Up</option><option value="down">Danach / Down</option>
+      <select name="abh_opti"><option value="Bitte Auswählen">+++Bitte Auswählen +++</option><option value="up">Davor / Up</option><option value="down">Danach / Down</option>
 		</select><br  />
-        
         <input type="submit" value="Speichern" />
       	<input name="action" value="insert2" type="hidden" />
       </form>
@@ -118,7 +154,7 @@ function abh_option_page() {
 <div class="inside">
 <p>Dieses Plugin wurde von <a href="http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/" target="_blank">Eric-Oliver Mächler v/o Annubis</a> entwickelt.</p>
 <p>Ich bin auch via Twitter erreichbar, dort könnt ihr mir natürlich auch Fragen stellen oder Probleme schildern. Mich findet man unter <a href="http://twitter.com/eric_maechler" target="_blank">@eric_maechler</a></p>
-<p>&copy; 2011, Eric-Oliver Mächler | Dies ist Version: 1.1.4</div>
+</div>
 </div>
 
 <?php 
@@ -132,6 +168,8 @@ function abh_add_menu() {
     add_option("abh_field","Das Plugin muss konfiguriert werden"); // optionsfield in Tabelle TABLEPRÄFIX_options
 	
 	add_option("abh_opti","up"); // optionsfield in Tabelle TABLEPRÄFIX_options (up/down)
+	
+	add_option("abh_status","Off");
 	
     add_options_page('A Broad Hint', 'A Broad Hint', 9, __FILE__, 'abh_option_page');
 }
@@ -153,6 +191,7 @@ function my_deinstall() {
 	
     delete_option('abh_field');
 	delete_option('abh_opti');
+	delete_option('abh_status');
 	
 	$wpdb->query("OPTIMIZE TABLE $wpdb->options");
 }

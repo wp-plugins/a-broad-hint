@@ -2,7 +2,7 @@
   Contributors: Eric-Oliver M&auml;chler v/o Annubis 
   Donate link: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
   Tags: editor, posting
-  Version: 1.1.4
+  Version: 1.1.5
   Requires at least: 2.7+
   Tested up to: 3.1
   Stable tag: 1.0
