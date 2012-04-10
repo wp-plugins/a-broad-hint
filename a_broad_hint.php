@@ -4,7 +4,7 @@ Plugin Name: A Broad Hint
 Plugin URI: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
 Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten. Die Administration finden sie unter <a href="options-general.php?page=a-broad-hint/a_broad_hint.php">A Broad Hint</a>
 Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.maechler.me) 
-Version: 1.1.5
+Version: 2.0
 License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (eric@maechler.me) and inform me.
 Author URI: http://www.maechler.me
 Update Server: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
@@ -130,7 +130,17 @@ function abh_option_page() {
 <h3>Unterstütze mich und Klicke auf den <b>Gefällt mir</b>-Button:</h3>
 <div class="inside">
 <p>Hier findest du immer die neuesten Informationen über meine Plugins und aus der Welt von Social Media, Programmierung und Webdesign</p>
-<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FMaechlerme%2F197548726945568&amp;width=600&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=true&amp;height=400" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:450px;" allowTransparency="true"></iframe>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1&appId=113174778766371";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/" data-num-posts="10" data-width="470"></div>
+
 </div>
 
 <div class="wrap">
@@ -152,7 +162,7 @@ function abh_option_page() {
 <div class="wrap">
 <h3>Über dieses Plugin</h3>
 <div class="inside">
-<p>Dieses Plugin wurde von <a href="http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/" target="_blank">Eric-Oliver Mächler v/o Annubis</a> entwickelt.</p>
+<p>Dieses Plugin wurde von <a href="http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/" target="_blank">Eric-Oliver Mächler</a> entwickelt.</p>
 <p>Ich bin auch via Twitter erreichbar, dort könnt ihr mir natürlich auch Fragen stellen oder Probleme schildern. Mich findet man unter <a href="http://twitter.com/eric_maechler" target="_blank">@eric_maechler</a></p>
 </div>
 </div>
