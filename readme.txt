@@ -1,8 +1,8 @@
 === A Broad Hint ===
-  Contributors: Eric-Oliver M&auml;chler v/o Annubis 
-  Donate link: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
+  Contributors: Eric-Oliver M&auml;chler
+  Donate link: http://www.maechler.me/blog/2011/03/25/wordpress-plugin-a-broad-hint/
   Tags: editor, posting
-  Version: 2.0
+  Version: 2.1
   Requires at least: 2.7+
   Tested up to: 3.1
   Stable tag: 1.0
@@ -19,7 +19,20 @@
   4. Ein Beitrag schreiben und ver&ouml;ffentlichen und dann das Ergebnis bewundern.
 
 = Licence =
-  Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (plugins@annu.biz) and inform me.
+  Copyright 2010-2013, Eric-Oliver M&auml;chler  (email : eric@maechler.me)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, as 
+    published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 == Screenshots ==
   No Screenshots aviable yet

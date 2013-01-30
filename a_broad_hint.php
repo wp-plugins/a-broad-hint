@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: A Broad Hint
-Plugin URI: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
+Plugin URI: http://www.maechler.me/blog/2011/03/25/wordpress-plugin-a-broad-hint/
 Description: Mit diesem Plugin bindet man vor oder nach jedem Beitrag ein kleinen Text/Banner ein um so auf etwas Aufmerksam zu machen. Das alles können sie in der Administration einschalten. Die Administration finden sie unter <a href="options-general.php?page=a-broad-hint/a_broad_hint.php">A Broad Hint</a>
 Author: Eric-Oliver M&auml;chler v/o Annubis (http://www.maechler.me) 
-Version: 2.0
+Version: 2.1
 License: Good news, this plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal. If you will using this Plugin on a commercial blog - its also free of charge but please send me an email (eric@maechler.me) and inform me.
 Author URI: http://www.maechler.me
 Update Server: http://www.maechler.me/2011/03/wordpress-plugin-a-broad-hint/
